@@ -50,6 +50,13 @@ healthy and sustainable study habits.
 
 ---
 
+## 📌 Future Improvements
+
+- Subject-wise study planning where weaker subjects are automatically prioritized with more study time.
+- Adaptive scheduling based on past study performance and consistency.
+- Personalized burnout recommendations using advanced analytics or machine learning.
+- User authentication and cloud-based data storage for cross-device access.
+
 ## 🚀 How to Run Locally
 
 1. Clone the repository:
