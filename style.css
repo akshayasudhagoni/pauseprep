@@ -1,0 +1,94 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #eef4f1, #e7f0f8);
+  padding: 30px;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.app-title {
+  font-family: 'Playfair Display', serif;
+  color: #2f5d50;
+}
+
+.subtitle {
+  color: #5f7f78;
+  font-style: italic;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 20px;
+}
+
+.card {
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+.login-card { background: #ffffff; }
+.study-card { background: #e8f5f1; }
+.graph-card { background: #e3f2fd; }
+.schedule-card { background: #fff8e1; }
+
+.hidden { display: none; }
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+input, select, button, audio {
+  width: 100%;
+  padding: 9px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #4caf93;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button.secondary {
+  background-color: #dfeee9;
+  color: #2f5d50;
+}
+
+#timerDisplay {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+#scheduleBlocks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.block.study { background: #bbdefb; }
+.block.break { background: #ffe0b2; }
+.block.meal { background: #f8bbd0; }
+
+.block {
+  padding: 14px;
+  border-radius: 10px;
+  font-weight: 500;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PausePrep</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="app-container">
+
+  <header>
+    <h1 class="app-title">🎧 PausePrep</h1>
+    <p class="subtitle">Focus deeply. Pause gently.</p>
+  </header>
+
+  <!-- LOGIN -->
+  <div class="card login-card" id="loginCard">
+    <h2>👋 Welcome</h2>
+    <label>Your Name</label>
+    <input id="userName">
+    <label>Your Age</label>
+    <input id="userAge" type="number" min="10" max="80">
+    <button id="saveProfile">Continue</button>
+  </div>
+
+  <!-- DASHBOARD -->
+  <div class="dashboard hidden" id="dashboard">
+
+    <!-- LEFT -->
+    <div>
+      <div class="card study-card">
+        <h2 id="greeting"></h2>
+
+        <label>Planned Study Hours</label>
+        <input type="number" id="plannedHours" min="1" max="16">
+
+        <label>Mood</label>
+        <select id="moodSelect">
+          <option value="fresh">🌿 Fresh</option>
+          <option value="okay">🙂 Okay</option>
+          <option value="tired">😴 Tired</option>
+        </select>
+
+        <label>Focus Music</label>
+        <select id="musicModeSelect">
+          <option value="none">No music</option>
+          <option value="piano">🎹 Piano</option>
+          <option value="lofi">🎶 Lofi</option>
+        </select>
+
+        <!-- LOCAL AUDIO -->
+        <audio id="musicPlayer" controls></audio>
+
+        <button id="startSession">Start Study Session</button>
+        <button id="resetProfile" class="secondary">Reset Profile</button>
+
+        <p id="timerDisplay">⏱ 00:00:00</p>
+        <p id="alertMessage"></p>
+      </div>
+
+      <div class="card graph-card">
+        <h2>📊 Weekly Progress</h2>
+        <canvas id="studyChart"></canvas>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="card schedule-card">
+      <h2>🧠 Today’s Schedule</h2>
+      <div id="scheduleBlocks"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
